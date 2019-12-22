@@ -12,7 +12,7 @@
 
 	var callback = '#call' + new Date().getTime();
 	var s = document.createElement("script");
-	s.src = "https://cdn.jsdelivr.net/gh/HomeHomeApp/cdn@latest/version.txt?callback=getVersion" + callback;
+	s.src = "https://cdn.jsdelivr.net/gh/HomeHomeApp/cdn@latest/version.php?callback=getVersion" + callback;
 	console.log(s.src);
 	document.body.appendChild(s);
 
