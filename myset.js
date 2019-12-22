@@ -1,6 +1,6 @@
 document.body.style.display="none";document.body.style.border="none";var ver="";function getVersion(myObj)
 {console.log(JSON.stringify(myObj));ver=myObj.version;doit();document.getElementById("latest").innerHTML="Latest &nbsp&nbspFirmware Version : "+ver}
-var callback='#call'+new Date().getTime();var s=document.createElement("script");s.src="https://cdn.jsdelivr.net/gh/HomeHomeApp/cdn/version.php?callback=getVersion"+callback;console.log(s.src);document.body.appendChild(s);function accord()
+var callback='#call'+new Date().getTime();var s=document.createElement("script");s.src="https://cdn.jsdelivr.net/gh/HomeHomeApp/cdn/version.txt?callback=getVersion"+callback;console.log(s.src);document.body.appendChild(s);function accord()
 {var acc=document.getElementsByClassName('acc');var i;for(i=0;i<acc.length;i++)
 {acc[i].addEventListener('click',function()
 {this.classList.toggle('active');var panel=this.nextElementSibling;if(panel.style.maxHeight)
