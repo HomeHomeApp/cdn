@@ -1,2 +1,0 @@
-# cdn
-some cdn files
